@@ -1,0 +1,60 @@
+<!-- coded by alireza mohammadi ;
+github: github.com/wwwAlireza ;
+codepen: codepen.io/alireza82 ;
+linkedin: linkedin.com/in/wwwAlireza ;
+email: alireza.mhm02@gmail.com ; -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="engine/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Notification Sender</h1>
+        </header>
+        <section class="input-container">
+            <!-- left panel -->
+            <div class="left-panel">
+                <input id="input-title" type="text" placeholder="Title" autocomplete="off">
+                <div class="select-container">
+                    <label for="select-icon">Icon :</label>
+                    <select id="select-icon">
+                        <option value="instagram" selected>instgram</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div class="select-container">
+                    <label for="select-image">Image :</label>
+                    <select id="select-image">
+                        <option value="plain" selected>Plain</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- right panel -->
+            <div class="right-panel">
+                <textarea dir="auto" id="input-text" placeholder="text"></textarea>
+                <div class="buttons-container">
+                    <button type="button" id="sound-button">
+                        <svg class="icon unmute-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                        <svg class="icon mute-icon d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"  stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                    </button>
+                    <button type="button" id="send-button">Send</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="engine/source/script.js"></script>
+
+</html>
